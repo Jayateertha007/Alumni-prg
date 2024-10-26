@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDMIT Alumni</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="alumni.css">
+</head>
+<body>
+    
+    <h1>SDMIT Alumni</h1>
+
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search by name, company, or position">
+        <button id="search-button">Search</button>
+    </div>
+
+    <div id="alumni-list"></div>
+    <div id="alumni-count"></div>
+    <div class="back-button-container">
+        <button class="back-button" onclick="window.location.href='interface.html'">Back</button>
+    </div>
+
+    <!-- Modal for detailed alumni information -->
+    <div id="alumni-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-alumni-photo"></div>
+            <h3 id="modal-alumni-name"></h3>
+            <p id="modal-graduation-year"></p>
+            <p id="modal-position"></p>
+            <p id="modal-company"></p>
+            <p id="modal-linkedin"></p>
+            <p id="modalEmail"></p>
+            <p id="modal-bio"></p>
+        </div>
+    </div>
+
+    <script src="alumni.js"></script>
+</body>
+</html>
